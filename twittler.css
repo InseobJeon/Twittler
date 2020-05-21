@@ -1,0 +1,53 @@
+#header {
+ background-color:rgb(187, 213, 233);
+ color: white;
+ border: 5px solid blue;
+ /*margin: 20px;*/
+ margin-bottom: 5%;
+ padding: 1%;
+ font-size: 400%;
+ text-align: center;
+ text-shadow: 2px 2px 4px black;
+}
+
+#whole {
+    width: 60%;
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+#typingSection {
+    background-color: rgb(118, 169, 212);
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+
+
+
+.miniTitle{
+    font-weight:bold;
+}
+
+.userID{
+    float:left;
+    margin-left:2%;
+    font-weight:bold;
+}
+
+.time{
+    float:right;
+    margin-right: 2%;
+}
+
+.comments{
+    margin-bottom: 30px;
+    margin-left:2%;
+}
+
+
+hr{
+    margin-bottom: 30px;
+}
+

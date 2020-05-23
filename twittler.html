@@ -10,32 +10,46 @@
 </style>
 
 <body>
-    <div id="whole" style="">
+    <div id="whole">
 
     
         <div id="header">Twittler</div>
 
-        <div id="typingSection">
-            <div class="miniTitle" style="padding-bottom: 1%; padding-top: 1%;">UserName</div>
-            <div><input style="height:30px; width: 40%"></div>
+        <div class="typingSection">
+            <div id="userName" class="miniTitle" style="padding-bottom: 1%; padding-top: 1%;">UserName</div>
+            <div><input id="userNameInput" style="height:30px; width: 40%"></div>
             
             <div class="miniTitle" style="padding-bottom: 1%; padding-top: 1%; margin-bottom: 1%;">Comment</div>
-            <div><input style="height: 100px; width: 80%; margin-bottom: 2%;"></div>
+            <div><input id="userMsgInput" style="height: 100px; width: 80%; margin-bottom: 2%;"></div>
             
-         <button id="checkNewTweet" style="font-size:30px; background-color: rgb(235, 235, 235) ;">tweet</button>
+         <button id="tweet" onclick="whenClickTwitt()" style="font-size:30px; background-color: rgb(235, 235, 235) ;">tweet</button>
         </div>
 
         <div style="background-color: blue; padding:2%">
-            <button id="tweet" style="font-size:20px; background-color: rgb(235, 235, 235); margin-left: 1%;">check new tweet</button>
+            <!--일단은 한 번 해볼게요-->
+            <button id="checkNewTweet" onclick="whenClickCheckNewTweet()" style="font-size:20px; background-color: rgb(235, 235, 235); margin-left: 1%;">check new tweet</button>
         </div>
 
-        <div style="background-color: rgb(201, 232, 246);">
+        <div id="watchingSection" style="background-color: rgb(201, 232, 246);">
 
+            <!--그러니깐 틀을 만들어주고, 그 틀에 접근할 수 있게 세팅만 해 놓은다음
+            input section 에서 넣은 애들을 submit 버튼을 누르면
+            그 틀에 날라가서 내용이 채워지게 만들자는 구조를 말씀하시는게 맞으신가요?
+
+            그니까 원래 몇 개는 있고
+            우리가 입력하면 그 밑에 채워지는 구조 말씀하신게 맞으신가요?
+            -->
+        
+
+            <!--
             <span class="userID" style="margin-top: 4%;">IngiKim</span>
             <span class="time" style="margin-top: 4%;">2019-01-03 12:30:20</span>
             <br>
             <div class="comments" style="margin-top: 4%;"> Welcome to Code States #codestates</div>
             <hr>
+                </li>
+
+            </ul>
 
             <span class="userID">IngiKim</span>
             <span class="time">2019-01-03 12:30:20</span>
@@ -54,17 +68,31 @@
             <br>
             <div class="comments"> Welcome to Code States #codestates</div>
             <hr>
+            -->
+            <div class='eachTwitSpace'>
+                <span class="userID">트윗 테스트</span>
+                <span class="time">2019-05-23 09:00:00</span>
+                <br>
+                <div class="comments">codestates twittler 테스트</div>
+                <hr>
+            </div>
 
-            <span class="userID">IngiKim</span>
-            <span class="time">2019-01-03 12:30:20</span>
-            <br>
-            <div class="comments"> Welcome to Code States #codestates</div>
-            <hr>
+
+            
+
+          
 
         </div>
 
-    </div>
+        
 
+    </div>
+    <script src="twittler.js"></script>
+    <!--저장했어요!-->
+    <!--이게 지금 안들어간거같은데요?? -->
+    <!--네 같은 폴더 안에 있어요-->
+    <!--일단 그럼 먹히긴 하나 alert 하나만 넣어볼게요 -->
+    <!--혹시 모르니깐... vscode 저장한 뒤 를 전부 종료하고 크롬에 Html 파일을 던져서 구동시켜 보겠습니다 -->
 </body>
 
 </html>
